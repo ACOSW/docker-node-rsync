@@ -1,2 +1,3 @@
 FROM node:current as base
-CMD node --version
+CMD apt-get update -yq
+CMD apt-get install -y rsync openssh-client
